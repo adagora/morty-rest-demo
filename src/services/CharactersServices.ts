@@ -16,7 +16,7 @@ export function useCharacters(
 }
 
 export function useCharacterById(
-  id: number,
+  id: string,
   enabled?: boolean
 ): UseQueryResult<IData, Error> {
   return useQuery<IData, Error, IData>({

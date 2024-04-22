@@ -10,7 +10,7 @@ export const CharacterAboutComponent = () => {
     error: characterError,
     isLoading: characterIsLoading,
     refetch: characterRefetch
-  } = useCharacterById(Number(id));
+  } = useCharacterById(String(id));
 
   return (
     <div>
